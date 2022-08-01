@@ -21,7 +21,6 @@ import App from './App.vue';
 
 // Sử dụng Icon Font Awesome cách 1
 import './static/fontawesome/css/all.min.css';
-
 import 'ant-design-vue/dist/antd.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-utilities.min.css';
