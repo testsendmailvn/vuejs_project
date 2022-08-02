@@ -1,10 +1,4 @@
-<!-- Khu vực import file -->
-<script setup>
-</script>
-
-<!-- Khu vực hiển thị dữ liệu ra màn hình -->
 <template>
-  <!-- ======= Header ======= -->
   <!-- ======= Hero Section ======= -->
   <section
     id="hero"
@@ -22,8 +16,4 @@
     </div>
   </section>
   <!-- End Hero -->
-  <!-- End Header -->
 </template>
-
-<!-- Khu vực style giao diện -->
-<style scoped></style>

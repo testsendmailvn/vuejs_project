@@ -1,20 +1,21 @@
-  <!-- Khu vực import file -->
-  <script setup>
-        import TheHeader from '../Components/Headers/TheHeader.vue';
-        import TheWelcome from '../Components/Headers/TheWelcome.vue';
-  </script>
+<!-- Khu vực import file -->
+<script setup>
+import Headers from "../Components/Headers.vue";
+import Mobile from "../Components/Mobile.vue";
+import Mains from "../Pages/Main.vue";
+import Footers from "../Components/Footer.vue";
+import Move from "../Components/Move.vue";
 
-  <!-- Khu vực hiển thị dữ liệu ra màn hình -->
-  <template>
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-    <TheHeader />
-    <TheWelcome />
-    <main>
-      
-    </main>
-  </template>
+</script>
 
-  <!-- Khu vực style giao diện -->
-  <style scoped>
+<!-- Khu vực hiển thị dữ liệu ra màn hình -->
+<template>
+  <Mobile />
+  <Headers />  
+  <Mains />
+  <Footers />
+  <Move />
+</template>
 
-  </style>
+<!-- Khu vực style giao diện -->
+<style scoped></style>
