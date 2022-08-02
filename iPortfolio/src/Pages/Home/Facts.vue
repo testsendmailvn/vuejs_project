@@ -1,4 +1,9 @@
+<script setup>
+
+</script>
+
 <template>
+  
   <!-- ======= Facts Section ======= -->
   <section id="facts" class="facts">
     <div class="container">
@@ -19,12 +24,7 @@
         >
           <div class="count-box">
             <i class="bi bi-emoji-smile"></i>
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="232"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
+            <span class="timer count-title count-number" data-to="232" data-speed="1500">0</span>
             <p><strong>Happy Clients</strong> consequuntur quae</p>
           </div>
         </div>
@@ -36,12 +36,7 @@
         >
           <div class="count-box">
             <i class="bi bi-journal-richtext"></i>
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="521"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
+           <span class="timer count-title count-number" data-to="521" data-speed="1500">0</span>
             <p><strong>Projects</strong> adipisci atque cum quia aut</p>
           </div>
         </div>
@@ -53,12 +48,7 @@
         >
           <div class="count-box">
             <i class="bi bi-headset"></i>
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="1453"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
+            <span class="timer count-title count-number" data-to="1453" data-speed="1500">0</span>
             <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
           </div>
         </div>
@@ -70,12 +60,7 @@
         >
           <div class="count-box">
             <i class="bi bi-people"></i>
-            <span
-              data-purecounter-start="0"
-              data-purecounter-end="32"
-              data-purecounter-duration="1"
-              class="purecounter"
-            ></span>
+            <span class="timer count-title count-number" data-to="32" data-speed="1500">0</span>
             <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
           </div>
         </div>
