@@ -5,16 +5,11 @@
     style="width: 327px;background-color: black; color: #fff;border:0px;"
     mode="inline"
     @click="handleClick"
-  >
-    <router-link :to="{ name: 'about' }"></router-link>
-        <span class="text-white">Home</span>
-    </router-link>  
-    <a-sub-menu key="sub1" @titleClick="titleClick" >     
-    
+  >    
+    <a-sub-menu key="sub1" @titleClick="titleClick" > 
       <template #icon><HomeOutlined /></template>
       <template #title>Home</template>             
-    </a-sub-menu>
-    
+    </a-sub-menu>    
     <a-sub-menu key="sub2" @titleClick="titleClick">
       <template #icon><EditOutlined /></template>
       <template #title>Factorys</template>      
