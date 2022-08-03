@@ -10,7 +10,7 @@ import {
 } from 'ant-design-vue';
 
 import App from './App.vue';
-
+    
 // Sử dụng Icon Font Awesome cách 2
 // import { library } from '@fortawesome/fontawesome-svg-core';
 // import { fas } from '@fortawesome/free-solid-svg-icons';
@@ -31,8 +31,8 @@ const app = createApp(App);
 
 app.use(createPinia());
 app.use(router);
-app.use(Menu);
-app.use(List);
+    app.use(Menu);
+    app.use(List);
 app.use(Button);
 app.use(Drawer);
 app.mount('#app');
