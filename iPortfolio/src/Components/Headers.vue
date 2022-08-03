@@ -32,7 +32,7 @@
           </li>
           <li>
             <a href="#skills" class="nav-link scrollto">
-            <i class="bx bx-user"></i> <span>Skills</span>
+            <i class="bx bx-menu"></i> <span>Skills</span>
             </a>
           </li>
           <li>
