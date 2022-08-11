@@ -1,72 +1,99 @@
 <template>
-  <a-menu 
+  <a-menu
     v-model:openKeys="openKeys"
     v-model:selectedKeys="selectedKeys"
-    style="width: 327px;background-color: black; color: #fff;border:0px;"
+    style="width: 327px; background-color: #040b14; color: #fff; border: 0px"
     mode="inline"
     @click="handleClick"
-  >    
-    <a-sub-menu key="sub1" @titleClick="titleClick" > 
-      <template #icon><HomeOutlined /></template>
-      <template #title>Home</template>             
-    </a-sub-menu>    
-    <a-sub-menu key="sub2" @titleClick="titleClick">
-      <template #icon><EditOutlined /></template>
-      <template #title>Factorys</template>      
-    </a-sub-menu>
-    <a-sub-menu key="sub3">
-      <template #icon><UserOutlined /></template>
-      <template #title>About</template>      
-    </a-sub-menu>
-    <a-sub-menu key="sub4" @titleClick="titleClick">
-      <template #icon><MenuOutlined /></template>
-      <template #title>Skills</template>            
-    </a-sub-menu>
-    <a-sub-menu key="sub5" @titleClick="titleClick">
-      <template #icon><FileOutlined /></template>
-      <template #title>Resume</template>      
-    </a-sub-menu>
-    <a-sub-menu key="sub6">
-      <template #icon><PieChartOutlined /></template>
-      <template #title>Portfolio</template>      
-    </a-sub-menu>
-    <a-sub-menu key="sub7">
-      <template #icon><SettingOutlined /></template>
-      <template #title>Services</template>      
-    </a-sub-menu>
+  >
+    <a-menu-item key="hero">
+      <router-link :to="{ name: 'hero' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Home </span>
+      </router-link>
+    </a-menu-item>
 
+    <a-menu-item key="about">
+      <router-link :to="{ name: 'about' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> About </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="facts">
+      <router-link :to="{ name: 'facts' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Facts </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="resume">
+      <router-link :to="{ name: 'resume' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Resume </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="portfolio">
+      <router-link :to="{ name: 'portfolio' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Portfolio </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="services">
+      <router-link :to="{ name: 'services' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Services </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="skills">
+      <router-link :to="{ name: 'skills' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Skills </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="testimonials">
+      <router-link :to="{ name: 'testimonials' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Testimonials </span>
+      </router-link>
+    </a-menu-item>
+    <a-menu-item key="contacts">
+      <router-link :to="{ name: 'contacts' }" style="color: #fff">
+        <span> <HomeOutlined class="me-1" /> Contacts </span>
+      </router-link>
+    </a-menu-item>
   </a-menu>
 </template>
 <script>
-import { defineComponent, ref, watch } from 'vue';
-import { SettingOutlined, HomeOutlined, EditOutlined, UserOutlined, MenuOutlined, FileOutlined,PieChartOutlined} from '@ant-design/icons-vue';
+import { defineComponent, ref, watch } from "vue";
+import {
+  SettingOutlined,
+  HomeOutlined,
+  EditOutlined,
+  UserOutlined,
+  MenuOutlined,
+  FileOutlined,
+  PieChartOutlined,
+} from "@ant-design/icons-vue";
 export default defineComponent({
-  components: {   
+  components: {
     HomeOutlined,
     EditOutlined,
     UserOutlined,
-    MenuOutlined, 
+    MenuOutlined,
     FileOutlined,
     PieChartOutlined,
-    SettingOutlined
-
+    SettingOutlined,
   },
 
   setup() {
-    const selectedKeys = ref(['1']);
-    const openKeys = ref(['sub1']);
+    const selectedKeys = ref(["1"]);
+    const openKeys = ref(["sub1"]);
 
-    const handleClick = e => {
-      console.log('click', e);
+    const handleClick = (e) => {
+      console.log("click", e);
     };
 
-    const titleClick = e => {
-      console.log('titleClick', e);
+    const titleClick = (e) => {
+      console.log("titleClick", e);
     };
 
-    watch(() => openKeys, val => {
-      console.log('openKeys', val);
-    });
+    watch(
+      () => openKeys,
+      (val) => {
+        console.log("openKeys", val);
+      }
+    );
     return {
       selectedKeys,
       openKeys,
@@ -74,6 +101,5 @@ export default defineComponent({
       titleClick,
     };
   },
-
 });
 </script>

@@ -56,7 +56,15 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
   opacity: 1;
 }
-
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background-color:#040b14;  
+}
+.ant-menu-item-selected a, .ant-menu-item-selected a:hover{
+  color:#20c997 !important;
+}
+.ant-menu-item-selected a, .ant-menu-item-selected a:hover{
+  color:#20c997 !important;
+}
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -951,4 +959,11 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+.ant-menu-sub.ant-menu-inline {
+  background-color:#040b14; 
+}
+.ant-menu-sub.ant-menu-inline:hover {
+  color:blue;
 }
