@@ -7,7 +7,7 @@
       <a-menu-item key="admin-users">
         <router-link :to="{ name: 'admin-users' }">
           <span>
-            <UserOutlined class="me-1" /> Tài khoản
+             Tài khoản
           </span>
         </router-link>
       </a-menu-item>
@@ -15,7 +15,7 @@
       <a-menu-item key="admin-roles">
         <router-link :to="{ name: 'admin-roles' }">
           <span>
-            <TagOutlined class="me-1"/> Vai trò
+            Vai trò
           </span>
         </router-link>
       </a-menu-item>
