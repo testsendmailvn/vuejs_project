@@ -13,13 +13,11 @@ const menu = [
                 name: "about",
                 component: () => import ("../pages/Home/About.vue")
             },
-
             {
                 path: "Facts",
                 name: "facts",
                component: () => import ("../pages/Home/Facts.vue")
             },
-
             {
                 path: "Resume",
                 name: "resume",

@@ -8,7 +8,8 @@
   >
     <a-menu-item key="hero">
       <router-link :to="{ name: 'hero' }" style="color: #fff">
-        <span> <HomeOutlined class="me-1" /> Home </span>
+        <HomeOutlined class="me-1" />
+        Home
       </router-link>
     </a-menu-item>
 
